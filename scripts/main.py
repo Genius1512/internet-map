@@ -6,10 +6,7 @@ from app import App
 def parse_args(argv) -> Args:
     parser = ArgumentParser()
 
-    parser.add_argument(
-            "start_url",
-            help="The URL to start from"
-            )
+    parser.add_argument("start_url", help="The URL to start from")
 
     args = parser.parse_args(argv)
     return args
@@ -25,5 +22,5 @@ def main(argv: list[str]) -> int:
 
 if __name__ == "__main__":
     from sys import exit, argv
-    exit(main(argv[1:]))
 
+    exit(main(argv[1:]))
